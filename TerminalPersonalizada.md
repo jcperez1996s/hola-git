@@ -64,3 +64,8 @@ SEt-PSReadLineOption -PredictionViewStyle ListView
             "white": "#F1F1F0",
             "yellow": "#F3F99D"
         }
+
+## Politica de Privacidad
+Get-ExecutionPolicy
+## Permitir scripts locales
+Set-ExecutionPolicy RemoteSigned
