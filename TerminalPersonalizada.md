@@ -21,20 +21,16 @@ Ejecuta esto para obtener la línea que carga Oh My Posh al iniciar PowerShell:
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json" | Invoke-Expression
 (Esto mostrará un código que debes guardar en tu perfil de PowerShell.)
 
-5. Configurar el perfil de PowerShell
-Crear/editar el perfil:
 
-New-Item -Path $PROFILE -Type File -Force
-notepad $PROFILE
-Pega el código generado en el paso 4 (debe verse similar a esto):
-
-(@(& 'C:/Users/tucon/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\tucon\AppData\Local\Programs\oh-my-posh\themes\jandedobbeleer.omp.json' --print) -join "`n") | Invoke-Expression
-
-
-
+5. Intalar Iconos para la terminal
 Install-Module -Name Terminal-Icons -Repository PSGallery
 
-## cONTENIDO TXT
+6. Configurar el perfil de PowerShell
+Crear/editar el perfil:
+New-Item -Path $PROFILE -Type File -Force
+notepad $PROFILE
+Pegamos el siguiente codigo en el archivo .txt que se abra y guadamos
+CONTENIDO TXT
 (@(& 'C:/Users/tucon/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\tucon\AppData\Local\Programs\oh-my-posh\themes\agnoster.omp.json' --print) -join "`n") | Invoke-Expression
 Import-Module Terminal-Icons
 SEt-PSReadLineOption -PredictionViewStyle ListView
